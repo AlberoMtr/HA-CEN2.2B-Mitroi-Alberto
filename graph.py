@@ -12,14 +12,11 @@ if __name__ == "__main__":
     from ucs_tsp import ucs_tsp
     from a_star_tsp import a_star_tsp
 
-    # Test BFS
     path, cost = bfs_tsp(graph, start)
     print(f"BFS Path: {path}, Cost: {cost}")
 
-    # Test UCS
     path, cost = ucs_tsp(graph, start)
     print(f"UCS Path: {path}, Cost: {cost}")
 
-    # Test A*
     path, cost = a_star_tsp(graph, start)
     print(f"A* Path: {path}, Cost: {cost}")
